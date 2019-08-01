@@ -77,6 +77,7 @@ req_data = "<xml><ToUserName><![CDATA[wx5823bf96d3bd56c7]]></ToUserName><Encrypt
 
 
 crypt_err, msg= wxc.DecryptMsg(req_data, req_msgsig, req_timestamp, req_nonce)
+print('---' * 30)
 print(msg, crypt_err)
 
 
